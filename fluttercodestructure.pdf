@@ -1,0 +1,44 @@
+flutter code structure
+
+1.When naming files, you always want to make sure you name them with lowercase letters and underscores between words.
+ex:login_view.dart
+2.When naming folders, you want to be sure to keep them very direct and clear. I always keep my directories and packages lowercased.
+ex:model
+ui
+theme
+3. Separate your views from the rest of your app
+ create either a “view” directory or “ui” directory, just depending on how big the project is. It should look something like this however, breaking out your
+ views into different sections of your application depending on what it does.
+ex:views
+   auth   
+      - login_view.dart
+      - register_view.dart
+   - main.dart
+   - opening_view.dart
+   - home_view.dart
+4.Add directory for storing widgets used in multiple different views..
+ex:views
+   widgets
+      - custom_alert_dialog.dart
+      - custom_tab_bar.dart
+5. Create a directory for storing your model classes
+ex: model
+   - user_model.dart
+   - item_model.dart
+   - method_request_model.dart
+   - method_response_model.dart
+6.Create a directory for your front-to-backend methods such as APIs.
+ex:net
+   - user_data_api.dart
+   - get_items_api.dart
+   - firebase.dart
+
+7. Separate your assets into an assets directory
+ex:assets
+   - logo.png
+   - image1.png
+   flares
+      - flare1.flr
+   fonts
+   - font1.ttf
+The above steps help to give you an understanding of some ways you can break it down to have clean organization of your project..
